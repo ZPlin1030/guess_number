@@ -3,7 +3,12 @@
 # 猜對的話 印出"終於猜對了"
 # 猜錯的話 要告訴使用者 比答案大or小
 import random
-r = random.randint(1, 100)
+start = input('請輸入範圍最小值: ')
+end = input('請輸入範圍最大值: ')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 i = 0
 while True:
 	x = input('請輸入數字: ')
